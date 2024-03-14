@@ -1,101 +1,318 @@
-.header{
-    gap: 30px;
-    width: 100%;
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
     height: 80px;
+    width: 100%;
+    padding-left: 700px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid  #ccc;
+
+}
+button:hover{
+    cursor: pointer;
+}
+.logo--img{
+    height: 42px;
+    width: 100px;
+}
+.nav{
+    padding-left: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location{
+    height: 40px;
+    padding:0 20px;
+    border-color: lightgray;
+    background-color: transparent;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+}
+.week{
+    padding:0 20px;
+    height: 40px;
+    background-color: transparent;
+    border-color: lightgray;
+}
+.guests{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 600px;
-    border-bottom: 1px solid;
+    height: 40px;
+    gap: 20px;
+    padding:0 20px;
+    background-color: transparent;
+    border-color: lightgray;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
 }
-.logo{
-    border: none;
-    width: 64px;
-    height: 30px;
-}
-.bar__icon{
-    height: 14px;
-    width: 8px;
-}
-.search__icon{
+.search--icon{
     height: 32px;
     width: 32px;
 }
-.nav__buttons{
-    margin-left: 80px;
-    margin-right: 40px;
+.menu{
     display: flex;
-}
-.nav__right{
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding:30px;
+    gap:  30px;
+
 }
-.invisible__buttons{
+.menu button:hover{
+    background-color: lightgray;
+}
+.ad--button{
     border: none;
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    margin: 0 20px;
-    gap: 10px;
+
 }
-button.invisible__buttons:hover{
-    background-color:lightgrey
+.globe--button{
+    border: none;
+    background-color: transparent;
+
 }
-.avatar__button{
-    gap: 10px;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.config--button{
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: lightgrey;
     height: 40px;
     width: 60px;
-    border-color: lightgray;
-    border-radius: 20px;
-    background-color: #fff;
-}
-.headline{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-left: 600px;
-}  
-.share__icon{
+    cursor: pointer;
+    gap:10px
+}
+.bar--icon{
     height: 16px;
     width: 16px;
 }
-
-.photos__container{
-    width:1200px;
-    height: 530px;
-    padding-left: 600px;
-    display: flex;
-    flex-direction:row;
-    gap: 10px;
-    
+.container{
+    margin-left: 700px;
+    margin-top: 30px;
 }
-.middle__photos{
+.title{
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+.share--save{
+    text-decoration: underline;
+    display: flex;
+    padding-left: 270px;
+    gap:10px
+}
+.share{
+    display: flex;
+    gap:10px
+}
+.share--icon{
+    height: 16px;
+    width: 16px;
+}
+.share--btn{
+    border:none;
+    background-color: transparent;
+}
+.save{
+    display: flex;
+    gap:10px
+}
+.save--btn{
+    border:none;
+    background-color: transparent;
+}
+.photos{
+    width: 1080px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    gap:5px;
+}
+.photos div{
+    width: 100%;
+    height: 100%;
+}
+.photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo--1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.img--1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.img--3{
+    border-top-right-radius: 20px;
+}
+.img--5{
+    border-bottom-right-radius: 20px;
+}
+.container--info{
     display: flex;
     flex-direction: column;
-}
-.head__photo{
-    width: 560px;
-    height: 505.39px
-}
-.top__photos{
-    width:272px;
-    height: 252.69px;
-}
-.bottom__photos{
-    width: 272px;
-    height: 244.69px;
+    gap: 30px;
 }
 .info{
-    padding-left: 600px;
+    padding-top: 28px;
 }
-ul{
+.ul--info{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+.pool{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.location--perk{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.space{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.description{
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.read--more--btn{
+    border: none;
+    color: #000;
+    text-decoration: underline;
+}
+.more--text{
+    display: none;
+}
+.description--text.show--more .more--text{
+    display: inline;
+}
+.container--perks{
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.perks{
+    display: flex;
+    gap:20px
+}
+.canal{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.praia{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wifi{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.estacionamento{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cameras{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.vista{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cozinha{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.trabalho{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.piscina{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.alarme{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration:line-through;
+}
+.reviews{
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.review--avatar{
+    height: 50px;
+    width: 50px;
+}
+.stars{
+    display: flex;
+}
+.review--1{
+    margin-bottom: 30px;
+}
+.review--1--user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.review--1--rating{
+    display: flex;
+    gap:15px;
+    padding: 5px 0 
+}
+.review--2--user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.review--2--rating{
+    display: flex;
+    gap:15px;
+    padding: 5px 0 
+}
+.container--rules{
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.rules{
+    display: flex;
+    padding-top: 20px;
+    gap: 50px
 }
